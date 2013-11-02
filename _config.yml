@@ -1,0 +1,6 @@
+port: 4000
+name: "U.S. Senator Barbara Boxer"
+description: "A site"
+url: "http://www.boxer.senate.gov"
+paginate: 10
+exclude:  ['_01/']
