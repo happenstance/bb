@@ -9,3 +9,5 @@ It has been built on the shoulders of giants with:
 
 Jekyll
 Foundation
+SASS
+Compass

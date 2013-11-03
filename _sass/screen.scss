@@ -4,11 +4,5 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "foundation";
 
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #666666;
-
-body {
-  font: 300% $font-stack;
-  color: $primary-color;
-}
