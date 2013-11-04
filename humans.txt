@@ -3,10 +3,12 @@
 
 # TEAM
 
+	Joaquin Esquivel
+	Tom Standifer
 
 # THANKS
 
-    <name>
+    TBD
 
 # TECHNOLOGY COLOPHON
 
