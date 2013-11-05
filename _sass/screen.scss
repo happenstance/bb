@@ -1,15 +1,33 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "settings";
 @import "normalize";
 @import "foundation";
 
 
 
-body {
-  font-family: 'Lato', sans-serif;
+#featured {
+  
+  @include grid-column ( $columns: 11, $center: true);
+  @extend .slideshow-wrapper;
+  $include-html-orbit-classes: $include-html-classes;
+  
+  
+  h3 { color: #ffffff; }
+  
+  .orbit-bullets {
+    display: table;
+    text-align: center;
+    li { width: emCalc(10); height: emCalc(10); }
+    }
+    
+  .orbit-prev, .orbit-next {
+   
   }
+}
+
+.top-bar .name h1 a:after {
+    background-image: url('../img/ca.png');
+    background-repeat: no-repeat;
+    content: "";
+
+}
   
