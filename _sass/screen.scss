@@ -2,7 +2,13 @@
 @import "normalize";
 @import "foundation";
 
-
+#topnav {
+  $include-html-top-bar-classes: $include-html-classes;
+  @extend .fixed;
+  .topbar {
+    background: #ffffff;
+  }
+}
 
 #featured {
   
@@ -20,8 +26,8 @@
     }
     
   .orbit-prev, .orbit-next {
-   
-  }
+    top:25%
+    }
 }
 
 .top-bar .name h1 a:after {

@@ -2,12 +2,13 @@
 layout: default
 ---
 <!--- Constant Senate Nav Bar--->
-<div class="fixed">
+<div id="topnav">
+	
 	<nav class="top-bar" data-options="is_hover:false">
 	
 		<ul class="title-area">
     <!-- Title Area -->
-    	<li class="name"> <h1> <a href="{{ site.url }}">{{ site.name }}</a> </h1> </li>
+    	<li class="name"> <h1> <a href="{{ site.url }}">{{ site.name }} <img src="../img/sa.png"> <img src="../img/ca.png"></a> </h1></li>
     	<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
     </ul>
 
@@ -67,7 +68,7 @@ layout: default
             </li>
 
             <li class="has-button">
-              <a class="small button" href="#">Q</a>
+              <a class="tiny button" href="#">Q</a>
             </li>
      </ul>
      
@@ -78,6 +79,24 @@ layout: default
 <!--- End Nav Bar--->
 
 <div class="row">
-	<h2><a href="#">:)</a></h2>
+    <div id="featured">
+
+    <!-- Desktop Slider -->
+		<ul data-orbit>
+              <li> <img src="../img/campus.jpg" /> 
+              	<div class="orbit-caption"> <h4 class="subheader">Release</h4><h3>Senator Boxer Delivers UCLA Commencement</h3></div>
+              </li>
+              <li> <img src="../img/afterschool.jpg" /> 
+              	<div class="orbit-caption"> <h4 class="subheader">Brief</h4><h3>Fighting for Afterschool Programs</h3></div>
+              </li>
+              <li> <img src="../img/health.jpg" /> 
+              	<div class="orbit-caption"> <h4 class="subheader">Services</h4><h3>Getting the Health Care You Need</h3></div>
+              </li>
+              <li> <img src="../img/afterschool.jpg" /> 
+              	<div class="orbit-caption"> <h4 class="subheader">Release</h4><h3>No More Default Threats</h3></div>
+              </li>
+       </ul>
+    </div>
+       
 </div>
 
