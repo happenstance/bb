@@ -1,22 +1,47 @@
+@import "compass";
 @import "settings";
 @import "normalize";
 @import "foundation";
+@import "compass/layout";
+@include sticky-footer(35px, "#page", "#page_footer", "#footer");
 
-#topnav {
-  $include-html-top-bar-classes: $include-html-classes;
-  @extend .fixed;
-  .topbar {
-    background: #ffffff;
-  }
+body {
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(white, #FDF4D5)); 
 }
 
+#page {
+  @include grid-row;
+  @include grid-column ( $columns: 12, $center: true);
+  @include box-shadow(black 0px 1px 15px);
+  @include border-radius (25px);
+  background: #ffffff;
+ 
+}
+
+#sitenav {
+  $include-html-top-bar-classes: $include-html-classes;
+  @extend .fixed;
+  
+  .top-bar {
+    @include box-shadow(black 0px 1px 15px);
+    background: #99B2B7;
+  }
+  
+  .top-bar-section li a:not(.button) {background: #99B2B7; font-size: .85em;}
+  .top-bar-section li a:not(.button):hover {background: #809499;}
+  .top-bar-section ul {background: #99B2B7;}
+  .top-bar .name {font-size: 18px; text-shadow: 0px 1px 15px #222222;}
+
+}
+
+
 #featured {
+    @include grid-column ( $columns: 11, $center: true);
+    @extend .slideshow-wrapper;
+    $include-html-orbit-classes: $include-html-classes;
   
-  @include grid-column ( $columns: 11, $center: true);
-  @extend .slideshow-wrapper;
-  $include-html-orbit-classes: $include-html-classes;
-  
-  
+  padding-top: 1.5em;
   h3 { color: #ffffff; }
   
   .orbit-bullets {
@@ -25,15 +50,17 @@
     li { width: emCalc(10); height: emCalc(10); }
     }
     
-  .orbit-prev, .orbit-next {
-    top:25%
-    }
+  .orbit-prev, .orbit-next {top:25%}
 }
 
-.top-bar .name h1 a:after {
-    background-image: url('../img/ca.png');
-    background-repeat: no-repeat;
-    content: "";
 
-}
+#footer {
+  @include grid-row;
+  width: 100%; overflow: hidden;
+  text-align: center;
+
+  ul {@include inline-list; left: 50%;}
+  ul li { right: 50%; }
   
+  font-size: .8em;
+}
