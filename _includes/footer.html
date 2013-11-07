@@ -1,3 +1,4 @@
+</div> <!---page div ends--->
 <div id="footer">
 	
 	<ul>
@@ -11,12 +12,12 @@
 </div>
 
 
-
 <script>
   document.write('<script src=/js/vendor/'
     + ('__proto__' in {} ? 'zepto' : 'jquery')
     + '.js><\/script>');
 </script>
+
   <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.alerts.js"></script>
   <script src="js/foundation/foundation.clearing.js"></script>
@@ -32,11 +33,12 @@
   <script src="js/foundation/foundation.tooltips.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
   <script src="js/foundation/foundation.interchange.js"></script>
+  
   <script>
     $(document).foundation('orbit', {
-    	slide_number: false
-    	timer_speed: 2500
-    	
+    	slide_number: false,
+    	timer_speed: 8000,
+    	resume_on_mouseout: true
     });
   </script> 
 
