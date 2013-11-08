@@ -79,7 +79,7 @@ $body-font-family: 'Lato', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans
 
 // Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: #002653;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -225,7 +225,7 @@ $header-font-family: 'Droid Serif', serif;
 
 // $anchor-text-decoration: none;
 // $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: darken($primary-color, 5%);
+ $anchor-font-color-hover: lighten($primary-color, 10%);
 
 // Style the <hr> element
 
@@ -551,7 +551,7 @@ $header-font-family: 'Droid Serif', serif;
 // We use these to set various text styles for breadcrumbs.
 
 // $crumb-font-size: em-calc(11);
-// $crumb-font-color: $primary-color;
+$crumb-font-color: #ED3800;
 // $crumb-font-color-current: #333;
 // $crumb-font-color-unavailable: #999;
 // $crumb-font-transform: uppercase;

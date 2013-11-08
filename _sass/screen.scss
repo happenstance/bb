@@ -1,76 +1,75 @@
+//Importing to set the stage, basic compass functions have been helpful with the foundaion library on top.
+
 @import "settings";
 @import "normalize";
 @import "foundation";
 @import "compass";
 
-// Screen adjustments
+// Screen resolution tweaks and adjustments
 
-@media screen and (max-width: 940px) { #sitenav .top-bar .name h1 a {width: 80%} #featured {@include grid-column ($center: true)}}
-@media screen and (max-width: 1180px){ #sitenav .top-bar-section ul {font-size: .8em}}
+@media screen and (max-width: 940px) {#sitenav .top-bar .name h1 a {width: 80%} #featured {@include grid-column ($columns: 11, $center: true)}}
+
+//The Gist
 
 body {
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(white, #FDF4D5)); 
-}
+  }
 
 #page {
   @include grid-row;
-  @include grid-column ( $columns: 12, $center: true);
+  @include grid-column ($columns: 12, $center: true);
   @include box-shadow(black 0px 1px 15px);
   @include border-radius (10px);
   background: #ffffff;
   padding-top: 46px;
-}
+  }
 
 #sitenav {
-  $include-html-top-bar-classes: $include-html-classes;
   @extend .fixed;
-  .top-bar {
-    @include box-shadow(black 0px 1px 15px);
-    background: #99B2B7;
+  .top-bar {@include box-shadow(black 0px 1px 15px); background: #99B2B7}
+  .top-bar-section li a:not(.button) {background: #99B2B7; font-size: 1em}
+  .top-bar-section li a:not(.button):hover {background: #809499}
+  .top-bar-section ul {background: #99B2B7}
+  .top-bar .name {font-size: emCalc(20); text-shadow: 0px 1px 15px #222222}
+  .top-bar-section ul li a {
+        &.button {
+          &:hover {
+            background: lighten($primary-color, 15%)}}}
   }
-  .top-bar-section li a:not(.button) {background: #99B2B7; font-size: 1em;}
-  .top-bar-section li a:not(.button):hover {background: #809499;}
-  .top-bar-section ul {background: #99B2B7;}
-  .top-bar .name {font-size: emCalc(20); text-shadow: 0px 1px 15px #222222;}
-}
 
-#search {@extend .show-for-large-up}
+#search {
+  @extend .show-for-large-up
+  }
 
 #crumbs {
   .breadcrumbs {font-size: 1.11em; @extend .hide-for-small;}  
-}
+  }
 
 #share {
   @extend .hide-for-small;
   text-align: right;
-}
+  }
 
 #featured {
-//  @include grid-column ( $columns: 9);
   @extend .slideshow-wrapper;
-  $include-html-orbit-classes: $include-html-classes;
-  
   h4 { color: #ffffff; }
-  p {color: #ffffff;}
-  a:hover {color: #CCC2CB }
+  p {color: #ffffff;@extend .hide-for-small}
   
   .orbit-bullets {
     display: table;
     text-align: center;
-    li { width: emCalc(10); height: emCalc(10); }
+    li {width: emCalc(10); height: emCalc(10)}
     }
     
   .orbit-prev, .orbit-next {top:25%}
-}
+  }
 
-#release {
-  
-}
+#release { 
+  }
 
-#rleft {
-  
-}
+#rleft { 
+  }
 
 #footer {
   @include grid-row;
@@ -80,4 +79,4 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
   ul {@include inline-list; display: inline-block; li {padding: 10px;}}
-}
+  }
