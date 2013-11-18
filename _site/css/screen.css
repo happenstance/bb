@@ -7338,7 +7338,7 @@ body {
   background-image: linear-gradient(#ffffff, #fdf4d5);
 }
 
-/* line 19, ../_sass/screen.scss */
+/* line 31, ../_sass/screen.scss */
 #page {
   width: 100%;
   margin-left: auto;
@@ -7368,70 +7368,70 @@ body {
   padding-top: 46px;
 }
 
-/* line 30, ../_sass/screen.scss */
+/* line 42, ../_sass/screen.scss */
 #sitenav .top-bar {
   -webkit-box-shadow: black 0px 1px 15px;
   -moz-box-shadow: black 0px 1px 15px;
   box-shadow: black 0px 1px 15px;
   background: #99B2B7;
 }
-/* line 31, ../_sass/screen.scss */
+/* line 43, ../_sass/screen.scss */
 #sitenav .top-bar-section li a:not(.button) {
   background: #99B2B7;
   font-size: 1em;
 }
-/* line 32, ../_sass/screen.scss */
+/* line 44, ../_sass/screen.scss */
 #sitenav .top-bar-section li a:not(.button):hover {
   background: #809499;
 }
-/* line 33, ../_sass/screen.scss */
+/* line 45, ../_sass/screen.scss */
 #sitenav .top-bar-section ul {
   background: #99B2B7;
 }
-/* line 34, ../_sass/screen.scss */
+/* line 46, ../_sass/screen.scss */
 #sitenav .top-bar .name {
   font-size: 1.25em;
   text-shadow: 0px 1px 15px #222222;
 }
-/* line 37, ../_sass/screen.scss */
+/* line 49, ../_sass/screen.scss */
 #sitenav .top-bar-section ul li a.button:hover {
   background: #0049a0;
 }
 
-/* line 46, ../_sass/screen.scss */
+/* line 58, ../_sass/screen.scss */
 #crumbs .breadcrumbs {
   font-size: 1.11em;
 }
 
-/* line 49, ../_sass/screen.scss */
+/* line 61, ../_sass/screen.scss */
 #share {
   text-align: right;
 }
 
-/* line 56, ../_sass/screen.scss */
+/* line 68, ../_sass/screen.scss */
 #featured h4 {
   color: #ffffff;
 }
-/* line 57, ../_sass/screen.scss */
+/* line 69, ../_sass/screen.scss */
 #featured p {
   color: #ffffff;
 }
-/* line 59, ../_sass/screen.scss */
+/* line 71, ../_sass/screen.scss */
 #featured .orbit-bullets {
   display: table;
   text-align: center;
 }
-/* line 62, ../_sass/screen.scss */
+/* line 74, ../_sass/screen.scss */
 #featured .orbit-bullets li {
   width: 0.625em;
   height: 0.625em;
 }
-/* line 65, ../_sass/screen.scss */
+/* line 77, ../_sass/screen.scss */
 #featured .orbit-prev, #featured .orbit-next {
   top: 25%;
 }
 
-/* line 74, ../_sass/screen.scss */
+/* line 86, ../_sass/screen.scss */
 #footer {
   width: 100%;
   margin-left: auto;
@@ -7447,7 +7447,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/* line 81, ../_sass/screen.scss */
+/* line 93, ../_sass/screen.scss */
 #footer ul {
   list-style-type: none;
   display: inline-block;
@@ -7458,7 +7458,7 @@ body {
   padding: 0px;
   display: inline;
 }
-/* line 81, ../_sass/screen.scss */
+/* line 93, ../_sass/screen.scss */
 #footer ul li {
   padding: 10px;
 }

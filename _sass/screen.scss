@@ -13,11 +13,23 @@
 
 body {
   $experimental-support-for-svg: true;
-  @include background-image(linear-gradient(white, #FDF4D5)); 
+  @include background-image(linear-gradient(white, #FDF4D5));
   }
+  
+#canvas {
+ // @include background-size(cover);
+  //background: {
+    //  image: image-url("../img/stripe.png");
+      //repeat: no-repeat;
+     // position: bottom left; }
+  //position: bottom left;
+  //height: 330px;
+  
+  
+}
 
 #page {
-  @include grid-row;
+  @include grid-row ($behavior: nested);
   @include grid-column ($columns: 12, $center: true);
   @include box-shadow(black 0px 1px 15px);
   @include border-radius (10px);
