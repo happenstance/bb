@@ -13,23 +13,29 @@
 //The Gist
 
 body {
+  height: 100%;
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(white, #FDF4D5));
-  repeat: no-repeat;
+  background-attachment: fixed;
   //@include background-size(cover);
   
   }
   
 #canvas {
 //@include grid-row;
-  @extend .sticky;
+ // @extend .sticky;
+ //@include background-size(cover);
+ height:220px;
+  @include background-image(url("../img/stripe.png"));
   @include background-size(cover);
+  background-position: bottom;
   background: {
-    image: image-url("../img/stripe.png");
-    repeat: no-repeat;
-    position: bottom left; }
-  position: bottom left;
-  height: 450px;
+    height:420px;
+    position: bottom left;
+    
+  }
+   // position: bottom left;
+  //position: bottom left;
   
   
 }
@@ -40,7 +46,6 @@ body {
   @include box-shadow(black 0px 1px 15px);
   @include border-radius (10px);
   background: #ffffff;
-  padding-top: 46px;
   }
 
 #sitenav {
@@ -73,6 +78,7 @@ body {
   @extend .slideshow-wrapper;
   h4 { color: #ffffff; }
   p {color: #ffffff;@extend .hide-for-small}
+  padding-top: 45px;
   
   .orbit-bullets {
     display: table;
@@ -96,7 +102,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: .8em;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   ul {@include inline-list; display: inline-block; li {padding: 10px;}}
 }

@@ -7329,6 +7329,7 @@ a.th {
 }
 /* line 15, ../_sass/screen.scss */
 body {
+  height: 100%;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZkZjRkNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #fdf4d5));
@@ -7336,23 +7337,23 @@ body {
   background-image: -moz-linear-gradient(#ffffff, #fdf4d5);
   background-image: -o-linear-gradient(#ffffff, #fdf4d5);
   background-image: linear-gradient(#ffffff, #fdf4d5);
-  repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* line 23, ../_sass/screen.scss */
+/* line 24, ../_sass/screen.scss */
 #canvas {
+  height: 220px;
+  background-image: url("../img/stripe.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url('../img/../img/stripe.png?1384727583');
-  background-repeat: no-repeat;
+  background-position: bottom;
+  background-height: 420px;
   background-position: bottom left;
-  position: bottom left;
-  height: 450px;
 }
 
-/* line 37, ../_sass/screen.scss */
+/* line 43, ../_sass/screen.scss */
 #page {
   width: 100%;
   margin-left: auto;
@@ -7379,82 +7380,85 @@ body {
   -o-border-radius: 10px;
   border-radius: 10px;
   background: #ffffff;
-  padding-top: 46px;
 }
 
-/* line 48, ../_sass/screen.scss */
+/* line 53, ../_sass/screen.scss */
 #sitenav .top-bar {
   -webkit-box-shadow: black 0px 1px 15px;
   -moz-box-shadow: black 0px 1px 15px;
   box-shadow: black 0px 1px 15px;
   background: #99B2B7;
 }
-/* line 49, ../_sass/screen.scss */
+/* line 54, ../_sass/screen.scss */
 #sitenav .top-bar-section li a:not(.button) {
   background: #99B2B7;
   font-size: 1em;
 }
-/* line 50, ../_sass/screen.scss */
+/* line 55, ../_sass/screen.scss */
 #sitenav .top-bar-section li a:not(.button):hover {
   background: #809499;
 }
-/* line 51, ../_sass/screen.scss */
+/* line 56, ../_sass/screen.scss */
 #sitenav .top-bar-section ul {
   background: #99B2B7;
 }
-/* line 52, ../_sass/screen.scss */
+/* line 57, ../_sass/screen.scss */
 #sitenav .top-bar .name {
   font-size: 1.25em;
   text-shadow: 0px 1px 15px #222222;
 }
-/* line 55, ../_sass/screen.scss */
+/* line 60, ../_sass/screen.scss */
 #sitenav .top-bar-section ul li a.button:hover {
   background: #0049a0;
 }
 
-/* line 64, ../_sass/screen.scss */
+/* line 69, ../_sass/screen.scss */
 #crumbs .breadcrumbs {
   font-size: 1.11em;
 }
 
-/* line 67, ../_sass/screen.scss */
+/* line 72, ../_sass/screen.scss */
 #share {
   text-align: right;
 }
 
-/* line 74, ../_sass/screen.scss */
+/* line 77, ../_sass/screen.scss */
+#featured {
+  padding-top: 45px;
+}
+/* line 79, ../_sass/screen.scss */
 #featured h4 {
   color: #ffffff;
 }
-/* line 75, ../_sass/screen.scss */
+/* line 80, ../_sass/screen.scss */
 #featured p {
   color: #ffffff;
 }
-/* line 77, ../_sass/screen.scss */
+/* line 83, ../_sass/screen.scss */
 #featured .orbit-bullets {
   display: table;
   text-align: center;
 }
-/* line 80, ../_sass/screen.scss */
+/* line 86, ../_sass/screen.scss */
 #featured .orbit-bullets li {
   width: 0.625em;
   height: 0.625em;
 }
-/* line 83, ../_sass/screen.scss */
+/* line 89, ../_sass/screen.scss */
 #featured .orbit-prev, #featured .orbit-next {
   top: 25%;
 }
 
-/* line 92, ../_sass/screen.scss */
+/* line 98, ../_sass/screen.scss */
 #footer {
   background: #FDF4D5;
   width: 100%;
   text-align: center;
   font-size: .8em;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-/* line 101, ../_sass/screen.scss */
+/* line 107, ../_sass/screen.scss */
 #footer ul {
   list-style-type: none;
   display: inline-block;
@@ -7465,7 +7469,7 @@ body {
   padding: 0px;
   display: inline;
 }
-/* line 101, ../_sass/screen.scss */
+/* line 107, ../_sass/screen.scss */
 #footer ul li {
   padding: 10px;
 }
