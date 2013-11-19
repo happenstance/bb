@@ -4,6 +4,7 @@
 @import "normalize";
 @import "foundation";
 @import "compass";
+@import "compass/layout/sticky-footer";
 
 // Screen resolution tweaks and adjustments
 
@@ -14,22 +15,27 @@
 body {
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(white, #FDF4D5));
+  repeat: no-repeat;
+  //@include background-size(cover);
+  
   }
   
 #canvas {
- // @include background-size(cover);
-  //background: {
-    //  image: image-url("../img/stripe.png");
-      //repeat: no-repeat;
-     // position: bottom left; }
-  //position: bottom left;
-  //height: 330px;
+//@include grid-row;
+  @extend .sticky;
+  @include background-size(cover);
+  background: {
+    image: image-url("../img/stripe.png");
+    repeat: no-repeat;
+    position: bottom left; }
+  position: bottom left;
+  height: 450px;
   
   
 }
 
 #page {
-  @include grid-row ($behavior: nested);
+@include grid-row($behavior: nested);
   @include grid-column ($columns: 12, $center: true);
   @include box-shadow(black 0px 1px 15px);
   @include border-radius (10px);
@@ -84,11 +90,13 @@ body {
   }
 
 #footer {
-  @include grid-row;
+//@include sticky-footer(45px);
+ //@extend .sticky;
+  background: #FDF4D5;
   width: 100%;
   text-align: center;
   font-size: .8em;
   margin-top: 25px;
   margin-bottom: 25px;
   ul {@include inline-list; display: inline-block; li {padding: 10px;}}
-  }
+}
