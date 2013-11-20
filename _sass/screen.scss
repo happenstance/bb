@@ -12,6 +12,8 @@
 
 //The Gist
 
+html {height: 100%}
+
 body {
   height: 100%;
   $experimental-support-for-svg: true;
@@ -24,14 +26,17 @@ body {
 #canvas {
 //@include grid-row;
  // @extend .sticky;
- //@include background-size(cover);
- height:220px;
+//@include grid-row;
+
+ height:330px;
   @include background-image(url("../img/stripe.png"));
   @include background-size(cover);
   background-position: bottom;
   background: {
     height:420px;
     position: bottom left;
+    top: 0;
+    left: 0;
     
   }
    // position: bottom left;
@@ -41,11 +46,12 @@ body {
 }
 
 #page {
-@include grid-row($behavior: nested);
-  @include grid-column ($columns: 12, $center: true);
+@include grid-row;
+ @include grid-column ($columns: 12, $center: true);
   @include box-shadow(black 0px 1px 15px);
   @include border-radius (10px);
   background: #ffffff;
+  margin-bottom: 10px;
   }
 
 #sitenav {
@@ -66,12 +72,13 @@ body {
   }
 
 #crumbs {
+  padding-top:48px;
   .breadcrumbs {font-size: 1.11em; @extend .hide-for-small;}  
   }
 
 #share {
   @extend .hide-for-small;
-  text-align: right;
+  text-align: left;
   }
 
 #featured {
@@ -92,11 +99,12 @@ body {
 #release { 
   }
 
-#rleft { 
+article { 
+  @include grid-column($columns:9, $float:right)
   }
 
 #footer {
-//@include sticky-footer(45px);
+@include sticky-footer(45px, "#page", "#page-footer", "#footer");
  //@extend .sticky;
   background: #FDF4D5;
   width: 100%;
